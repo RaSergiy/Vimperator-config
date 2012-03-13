@@ -1,0 +1,61 @@
+" vim: set ft=vimperator:
+
+source ~/.vimperator-sites
+
+map <C-Left> ":tabp<cr>"
+map <C-Right> ":tabn<cr>"
+
+map <silent> eu ":set enc=UTF-8<cr>"
+map <silent> ew ":set enc=windows-1251<cr>"
+map <silent> ek ":set enc=KOI8-R<cr>"
+
+
+map <A-z> gT
+map <A-x> gt
+
+map пп gg
+map П G
+
+" F1 - help
+" F2
+" F3
+" map <F4>   ":set! network.proxy.type=1<cr>:echom 'Proxy on'<cr>"
+" map <C-F4> ":set! network.proxy.type=0<cr>:echom 'Proxy off'<cr>"
+" F5 - reload
+
+map <F6> ":set toolbars=invmenu<cr>"
+map <F7> ":set toolbars=invtabs<cr>"
+map <F8> ":set invscrollbar<cr>:reload<cr>"
+" map <F9>   ":set! permissions.default.image=1<cr>:echo 'Images on'<cr>"
+" map <C-F9> ":set! permissions.default.image=2<cr>:echo 'Images off'<cr>"
+" map <F10> ":set! javascript.enabled=true<cr>:echo 'JavaScript on'<cr>"
+" map <C-F10> ":set! javascript.enabled=false<cr>:echo 'JavaScript off'<cr>"
+
+
+"------------------------------- MAIN Options 
+
+hi Normal color:#FF2; background:#000;
+hi CmdLine color:#4F4; background:#000;
+hi StatusLine background:#000; color: #88F;
+hi TabNumber color:#F22; font-weight:bold; font-size: larger; 
+hi InfoMsg background:#000; color:#FFF;
+hi Search background:#224; color:#4F4;
+hi CompItem color:#88F;
+hi CompItem[selected] background: #224; color:#2e9;
+
+set toolbars=tabs
+set noautocomplete
+set tabnumbers
+
+set defsearch="go"
+set focuscontent
+set visualbell
+
+" ----
+
+set hlsearch
+set ignorecase
+set smartcase
+set incsearch
+set online
+
